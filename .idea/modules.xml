@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Module2.iml" filepath="$PROJECT_DIR$/.idea/Module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 11 module2/bai 11 module2.iml" filepath="$PROJECT_DIR$/bài 11 module2/bai 11 module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 10 module2/bài 10 module2.iml" filepath="$PROJECT_DIR$/bài 10 module2/bài 10 module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 12 module 2/bài 12 module 2.iml" filepath="$PROJECT_DIR$/bài 12 module 2/bài 12 module 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 13 module 2/bài 13 module 2.iml" filepath="$PROJECT_DIR$/bài 13 module 2/bài 13 module 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 14 module2/bài 14 module2.iml" filepath="$PROJECT_DIR$/bài 14 module2/bài 14 module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 15 module2/bài 15 module2.iml" filepath="$PROJECT_DIR$/bài 15 module2/bài 15 module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 16 module2/bài 16 module2.iml" filepath="$PROJECT_DIR$/bài 16 module2/bài 16 module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 2 Module2/bài 2 Module2.iml" filepath="$PROJECT_DIR$/bài 2 Module2/bài 2 Module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 3 Module2/bài 3 Module2.iml" filepath="$PROJECT_DIR$/bài 3 Module2/bài 3 Module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 5 Module2/bài 5 Module2.iml" filepath="$PROJECT_DIR$/bài 5 Module2/bài 5 Module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 5 Module2/src/bài 5 Module21.iml" filepath="$PROJECT_DIR$/bài 5 Module2/src/bài 5 Module21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 6 Module2/bài 6 Module2.iml" filepath="$PROJECT_DIR$/bài 6 Module2/bài 6 Module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 7 Module/bài 7 Module.iml" filepath="$PROJECT_DIR$/bài 7 Module/bài 7 Module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 1 Module2/hcn/hcn.iml" filepath="$PROJECT_DIR$/bài 1 Module2/hcn/hcn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 1 Module2/system-time/system-time.iml" filepath="$PROJECT_DIR$/bài 1 Module2/system-time/system-time.iml" />
+    </modules>
+  </component>
+</project>
