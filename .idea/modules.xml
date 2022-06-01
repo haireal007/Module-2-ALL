@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaiTapModule2/BaiTapModule2.iml" filepath="$PROJECT_DIR$/BaiTapModule2/BaiTapModule2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Bài thi thử/Bài thi thử.iml" filepath="$PROJECT_DIR$/Bài thi thử/Bài thi thử.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module2.iml" filepath="$PROJECT_DIR$/.idea/Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 11 module2/bai 11 module2.iml" filepath="$PROJECT_DIR$/bài 11 module2/bai 11 module2.iml" />
