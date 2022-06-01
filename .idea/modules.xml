@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bài thi thử/Bài thi thử.iml" filepath="$PROJECT_DIR$/Bài thi thử/Bài thi thử.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module2.iml" filepath="$PROJECT_DIR$/.idea/Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 11 module2/bai 11 module2.iml" filepath="$PROJECT_DIR$/bài 11 module2/bai 11 module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 10 module2/bài 10 module2.iml" filepath="$PROJECT_DIR$/bài 10 module2/bài 10 module2.iml" />
@@ -10,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/bài 14 module2/bài 14 module2.iml" filepath="$PROJECT_DIR$/bài 14 module2/bài 14 module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 15 module2/bài 15 module2.iml" filepath="$PROJECT_DIR$/bài 15 module2/bài 15 module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 16 module2/bài 16 module2.iml" filepath="$PROJECT_DIR$/bài 16 module2/bài 16 module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bài 17 module2/bài 17 module2.iml" filepath="$PROJECT_DIR$/bài 17 module2/bài 17 module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 2 Module2/bài 2 Module2.iml" filepath="$PROJECT_DIR$/bài 2 Module2/bài 2 Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 3 Module2/bài 3 Module2.iml" filepath="$PROJECT_DIR$/bài 3 Module2/bài 3 Module2.iml" />
       <module fileurl="file://$PROJECT_DIR$/bài 5 Module2/bài 5 Module2.iml" filepath="$PROJECT_DIR$/bài 5 Module2/bài 5 Module2.iml" />
