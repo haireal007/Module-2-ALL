@@ -64,6 +64,10 @@ public class ManagerStudent {
         }
     }
 
+    public void addStudent(Student student) {
+        students.add(student);
+    }
+
     public Student createStudent() {
         int id = validateStudent.validateID(students);
         String name = validateStudent.validateString("name :");
@@ -74,9 +78,6 @@ public class ManagerStudent {
         return new Student(id, name, age, gender, address, mediumScore);
     }
 
-    public void addStudent(Student student) {
-        students.add(student);
-    }
 
     public void editStudent() {
         System.out.println("Nhập id cần sửa");

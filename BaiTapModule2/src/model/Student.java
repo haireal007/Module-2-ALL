@@ -70,6 +70,18 @@ public class Student {
         this.mediumScore = mediumScore;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", address='" + address + '\'' +
+                ", mediumScore=" + mediumScore +
+                '}';
+    }
+
     public String write() {
         return id + "," + name + "," + age + "," + gender + "," + address + "," + mediumScore;
     }

@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReaderAndWriteStudent {
-    File file = new File("D:\\Module2\\BaiTapModule2\\src\\data");
+    File file = new File("D:\\Module2\\BaiTapModule2\\src\\data\\student.csv");
 
     public void Write(ArrayList<Student> students) {
         try {
             FileWriter fileWriter = new FileWriter(file);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write("id,name,age,gender,address,avgScore");
+            bufferedWriter.write("id,name,age,gender,address,mediumScore");
             bufferedWriter.newLine();
             for (Student s : students) {
                 bufferedWriter.write(s.write());
