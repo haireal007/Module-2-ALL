@@ -1,7 +1,7 @@
 package validateClass;
 
 public class ValidateClassNameTest {
-    public static final String[] className = new String[]{"C0318G", "M0318G", "P0323A"};
+    public static final String[] className = new String[]{"0359809495", "01864728537"};
     public static ValidateClassName classNameExample;
 
     public static void main(String[] args) {
