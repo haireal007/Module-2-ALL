@@ -15,7 +15,7 @@ public class ManagerAcc {
     {
         accounts = readerAndWriteAcc.reader("D:\\Module2\\caseStudy1\\src\\data\\account.txt");
         if (accounts.size() == 0) {
-            accounts.add(new Account("admin", "admin", "admin",123456789));
+            accounts.add(new Account("admin", "admin", "admin", 123456789, 1000000000));
         }
         readerAndWriteAcc.write(accounts, "D:\\Module2\\caseStudy1\\src\\data\\account.txt");
     }
@@ -31,7 +31,7 @@ public class ManagerAcc {
         System.out.println("Nhập passWord");
         String pass = scanner.nextLine();
         for (Account acc : accounts) {
-            if (acc.getUserName().equals(user) && acc.getPass().equals(pass)) {
+            if (acc.getUserName().equals(user) && acc.getPass().equals(pass) && acc.getRole().equals("admin")) {
                 ManagerAcc.account = acc;
                 return true;
             }

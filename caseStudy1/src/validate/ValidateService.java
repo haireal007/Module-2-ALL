@@ -51,7 +51,7 @@ public class ValidateService {
         while (true) {
             try {
                 System.out.println("Nhập price:");
-                double price = Integer.parseInt(scanner.nextLine());
+                double price = Double.parseDouble(scanner.nextLine());
                 return price;
             } catch (Exception e) {
                 System.err.println("Nhập sai price rồi");

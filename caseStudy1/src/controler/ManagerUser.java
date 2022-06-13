@@ -4,12 +4,13 @@ import io.ReaderAndWriteAcc;
 import model.Account;
 import validate.ValidateUser;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ManagerUser {
     Scanner scanner = new Scanner(System.in);
-    ReaderAndWriteAcc<Account> readerAndWriteAccUser = new ReaderAndWriteAcc<>();
+    ReaderAndWriteAcc<Account> readerAndWriteAccUser = new ReaderAndWriteAcc<Account>();
     ArrayList<Account> accounts;
     ValidateUser validateUser = new ValidateUser();
 
@@ -29,16 +30,27 @@ public class ManagerUser {
             System.out.println("1.Thêm User");
             System.out.println("2.Sửa User");
             System.out.println("3.Xoá User");
+            System.out.println("4.Nạp tiền");
+            try {
 
-            int choice = Integer.parseInt(scanner.nextLine());
-            switch (choice) {
-                case 1:
-                    addUser();
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    break;
+
+                int choice = Integer.parseInt(scanner.nextLine());
+                switch (choice) {
+                    case 1:
+                        addUser();
+                        break;
+                    case 2:
+                        editUser();
+                        break;
+                    case 3:
+                        editDlete();
+                        break;
+                    case 4:
+                        inputMonney();
+                        break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("nhập sai lựa chọn - nhập lại");
             }
         }
     }
@@ -53,12 +65,32 @@ public class ManagerUser {
 
     // thêm user
     public Account creatUser() {
-        String user = validateUser.validateName();
+        String name = null;
+        while (true) {
+            System.out.println("nhập name");
+            name = scanner.nextLine();
+            if (name.equals("")) {
+                System.out.println("không được để trống");
+            }
+            if (checkUserName(name)) {
+                break;
+            }
+        }
         String pass = validateUser.validatePass();
         int phone = validateUser.validateNumber();
-        return new Account(user, pass, "user", phone);
+        return new Account(name, pass, "user", phone, 0);
     }
 
+
+    public boolean checkUserName(String userName) {
+        for (Account acc : accounts) {
+            if (acc.getUserName().equals(userName)) {
+                System.out.println("tài khoản đã tồn tại");
+                return false;
+            }
+        }
+        return true;
+    }
 
     //thêm list
     public void addUser() {
@@ -67,15 +99,38 @@ public class ManagerUser {
     }
 
     //sửa UserName
-    public void editName() {
-        System.out.println("Nhập name");
-        String name = scanner.nextLine();
+    public void editUser() {
+        String name = validateUser.validateString();
         for (Account ac : accounts) {
             if (ac.getUserName().equals(name) && ac.getRole().equals("user")) {
                 System.out.println("Nhập lại pass");
-
+                String pass = validateUser.validatePass();
+                ac.setPass(pass);
             }
         }
+        readerAndWriteAccUser.write(accounts, "D:\\Module2\\caseStudy1\\src\\data\\account.txt");
+    }
+
+    // xoá UserName
+    public void editDlete() {
+        String name = validateUser.validateString();
+        for (int i = 0; i < accounts.size(); i++) {
+            if (accounts.get(i).getUserName().equals(name) && accounts.get(i).getRole().equals("user")) {
+                accounts.remove(i);
+            }
+        }
+        readerAndWriteAccUser.write(accounts, "D:\\Module2\\caseStudy1\\src\\data\\account.txt");
+    }
+
+    public void inputMonney() {
+        String name = validateUser.validateString();
+        for (Account ac : accounts) {
+            if (ac.getUserName().equals(name) && ac.getRole().equals("user")) {
+                double money = validateUser.validateMoney();
+                ac.setMoney(money);
+            }
+        }
+        readerAndWriteAccUser.write(accounts,"D:\\Module2\\caseStudy1\\src\\data\\account.txt");
     }
 
 }

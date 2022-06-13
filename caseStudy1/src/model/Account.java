@@ -7,15 +7,9 @@ public class Account implements Serializable {
     private String pass;
     private String role;
     private int number;
+    private double money;
 
     public Account() {
-    }
-
-    public Account(String userName, String pass, String role, int number) {
-        this.userName = userName;
-        this.pass = pass;
-        this.role = role;
-        this.number = number;
     }
 
     public String getUserName() {
@@ -50,6 +44,22 @@ public class Account implements Serializable {
         this.number = number;
     }
 
+    public double getMoney(double money) {
+        return this.money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
+    }
+
+    public Account(String userName, String pass, String role, int number, double money) {
+        this.userName = userName;
+        this.pass = pass;
+        this.role = role;
+        this.number = number;
+        this.money = money;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
@@ -57,6 +67,7 @@ public class Account implements Serializable {
                 ", pass='" + pass + '\'' +
                 ", role='" + role + '\'' +
                 ", number=" + number +
+                ", money=" + money +
                 '}';
     }
 }
